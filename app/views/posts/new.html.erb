@@ -1,0 +1,6 @@
+<h1>새글쓰기</h1>
+<%= form_tag("/posts", method: "post") do %>
+  title : <%= text_field_tag("post[]") %><br>
+  content : <%= text_area_tag("post:[]") %><br>
+  <%= submit_tag("write") %>
+<% end %>

@@ -1,0 +1,14 @@
+<h1>유정이의 게시판만들기</h1>
+
+<%= link_to "새글쓰기", "/posts/new" %>
+
+<% @posts.each do |post| %>
+<div>
+<%= link_to post.title, post %>
+</div>
+  <!-- <p>
+    <a href="/posts/show/<%= post.id %>">
+      <%= post.title %></a>
+      <%= post.content %>
+  </p> -->
+<% end %>
